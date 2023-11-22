@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            margin: 200px;
+        }
+
+        .Herder {
+            margin-bottom: 50px;
+        }
+
+        .input-group-prepend {
+            border: none;
+            /* Remove the border from the input group */
+        }
+
+        .input-group {
+            margin-top: 20px;
+        }
+
+        .icon-orange {
+            border: orange;
+            /* Remove the border from the icon */
+        }
+
+        .form-control {
+            border-left: none !important;
+            /* Remove the left border from the input field */
+            background-color: #fcfcfe;
+            /* Set the background color */
+        }
+
+        /* Custom styles for icons */
+        .icon-orange {
+            color: orange;
+        }
+
+        .input-group-prepend .icon-orange {
+            background-color: white;
+            border: 1px solid orange;
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        input {
+            height: 50px;
+        }
+
+        /* Custom style for larger input */
+        .form-control-lg {
+            height: calc(2.5em + 1.5rem + 2px);
+            padding: 0.75rem 1rem;
+            font-size: 1.25rem;
+            line-height: 1.5;
+            border-radius: 0.3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Include the reCAPTCHA API script in your HTML (add this to your <head> section) -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-3">
+                <form class="p-5" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                    <h2 class="Herder">Register User</h2>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-orange">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input type="email" class="form-control form-control-md" id="username" placeholder="Email*">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-orange">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control form-control-md" id="username"
+                                placeholder="Confirm Email*">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-orange">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control form-control-md" id="username"
+                                placeholder="Username*">
+                        </div>
+                    </div>
+                    <div class="form-group">
+
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-orange">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control form-control-md" id="username"
+                                placeholder="First name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-orange">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control form-control-md" id="username"
+                                placeholder="Last name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-orange">
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control form-control-md" id="username" placeholder="Phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-orange">
+                                    <i class="fa fa-phone"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control form-control-md" id="username" placeholder="Job">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-orange">
+                                    <i class="fa fa-map"></i>
+                                </span>
+                            </div>
+                            <input type="password" class="form-control form-control-md" id="password"
+                                placeholder="Address">
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text icon-orange">
+                                        <i class="fa fa-comments"></i>
+                                    </span>
+                                </div>
+                                <textarea class="form-control" id="exampleTextarea" rows="3"
+                                    placeholder="Description"></textarea>
+                            </div>
+                        </div>
+                        <div class="radio">
+                            <div class="text">Are you buyer or seller?</div>
+                            <div class="form-check form-check-inline d-flex align-items-center">
+                                <input class="form-check-input" type="radio" name="gender" id="boyRadio" value="boy">
+                                <label class="form-check-label" for="boyRadio">
+                                    <span class="input-group-text icon-orange mx-2">
+                                        <i class="fa fa-user"></i>
+                                        <!-- Assuming "fa-mars" is the icon for a male/boy -->
+                                    </span>
+                                    Buyer
+                                </label>
+                            </div>
+
+                            <div class="form-check form-check-inline d-flex align-items-center">
+                                <input class="form-check-input" type="radio" name="gender" id="girlRadio" value="girl">
+                                <label class="form-check-label" for="girlRadio">
+                                    <span class="input-group-text icon-orange mx-2">
+                                        <i class="fa fa-user"></i>
+                                        <!-- Assuming "fa-venus" is the icon for a female/girl -->
+                                    </span>
+                                    Seller
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="form-check mt-3">
+                            <input class="form-check-input" type="checkbox" value="" id="notARobot">
+                            <label class="form-check-label" for="notARobot">
+                                I have read and agree to the website. terms and conditions
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Error message container -->
+                    <div id="errorMessage" class="text-danger mb-3"></div>
+                    <!-- Google reCAPTCHA with "I'm not a robot" checkbox -->
+                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY" data-theme="light"
+                        data-size="normal" data-callback="recaptchaCallback"
+                        data-error-callback="recaptchaErrorCallback"></div>
+
+                    <button type="submit" class="btn btn-lg-outline btn-outline-danger mt-3">Register</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
