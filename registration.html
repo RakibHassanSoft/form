@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <style>
         body {
             margin: 200px;
@@ -190,7 +192,6 @@
                                 <label class="form-check-label" for="girlRadio">
                                     <span class="input-group-text icon-orange mx-2">
                                         <i class="fa fa-user"></i>
-                                        <!-- Assuming "fa-venus" is the icon for a female/girl -->
                                     </span>
                                     Seller
                                 </label>
@@ -201,18 +202,12 @@
                         <div class="form-check mt-3">
                             <input class="form-check-input" type="checkbox" value="" id="notARobot">
                             <label class="form-check-label" for="notARobot">
-                                I have read and agree to the website. terms and conditions
+                                I have read and agree to the website terms and conditions.
                             </label>
                         </div>
                     </div>
 
-                    <!-- Error message container -->
-                    <div id="errorMessage" class="text-danger mb-3"></div>
-                    <!-- Google reCAPTCHA with "I'm not a robot" checkbox -->
-                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY" data-theme="light"
-                        data-size="normal" data-callback="recaptchaCallback"
-                        data-error-callback="recaptchaErrorCallback"></div>
-                    <button type="submit" class="btn btn-lg-outline btn-outline-danger mt-3">Register</button>
+                    <div class="g-recaptcha" data-sitekey="6Lc3dRkpAAAAAD38R81GHSQoBh0kobrA1PfGn81i"></div>
                     <div class="register">Sign In <span>|| forget your password</span></div>
 
                 </form>
