@@ -18,7 +18,7 @@
 
         }
         .reg .tration{
-            border-bottom:2px solid orangered;
+            border-bottom:1px solid orange;
             padding-bottom:10px;
         }
 
@@ -67,7 +67,6 @@
 </head>
 
 <body>
-    <!-- Include the reCAPTCHA API script in your HTML (add this to your <head> section) -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <div class="container">
@@ -75,31 +74,6 @@
             <div class="col-md-8 offset-md-3">
                 <form class="p-5" style="box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
                     <h2 class="reg"><span class="tration">Reg</span>ister</h2>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text icon-orange">
-                                    <i class="fa fa-envelope"></i>
-                                </span>
-                            </div>
-                            <input type="email" class="form-control form-control-md" id="username" placeholder="Email*">
-                        </div>
-                    </div>
-
-
-                    <div class="form-group">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text icon-orange">
-                                    <i class="fa fa-envelope"></i>
-                                </span>
-                            </div>
-                            <input type="text" class="form-control form-control-md" id="username"
-                                placeholder="Confirm Email*">
-                        </div>
-                    </div>
-
-
                     <div class="form-group">
 
                         <div class="input-group">
@@ -153,6 +127,28 @@
                                 </span>
                             </div>
                             <input type="text" class="form-control form-control-md" id="username" placeholder="Job">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-orange">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input type="email" class="form-control form-control-md" id="username" placeholder="Email*">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text icon-orange">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control form-control-md" id="username"
+                                placeholder="Confirm Email*">
                         </div>
                     </div>
                     <div class="form-group">
@@ -216,8 +212,8 @@
                     <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY" data-theme="light"
                         data-size="normal" data-callback="recaptchaCallback"
                         data-error-callback="recaptchaErrorCallback"></div>
-
                     <button type="submit" class="btn btn-lg-outline btn-outline-danger mt-3">Register</button>
+                    <div class="register">Sign In <span>|| forget your password</span></div>
 
                 </form>
             </div>
