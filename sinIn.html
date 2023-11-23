@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <style>
         body{
             margin: 200px;
         }
@@ -94,18 +95,7 @@
                                 placeholder="Enter your password">
                         </div>
                     </div>
-                    <!-- Error message container -->
-                    <div id="errorMessage" class="text-danger mb-3"></div>
-                    <!-- Google reCAPTCHA with "I'm not a robot" checkbox -->
-                    <div class="g-recaptcha" data-sitekey="YOUR_RECAPTCHA_SITE_KEY" data-theme="light"
-                        data-size="normal" data-callback="recaptchaCallback"
-                        data-error-callback="recaptchaErrorCallback"></div>
-                    <div class="form-check mt-3">
-                        <input class="form-check-input" type="checkbox" value="" id="notARobot">
-                        <label class="form-check-label" for="notARobot">
-                            Remember Me
-                        </label>
-                    </div>
+                    <div class="g-recaptcha" data-sitekey="6Lc3dRkpAAAAAD38R81GHSQoBh0kobrA1PfGn81i"></div>
                     <button type="submit" class="btn btn-lg btn-outline-danger mt-3">Log in</button>
                     <div class="register">Register <span>|| forget your password</span></div>
 
